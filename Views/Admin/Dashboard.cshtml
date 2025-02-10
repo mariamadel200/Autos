@@ -1,0 +1,62 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+
+
+        .main-container {
+            margin: 100px auto;
+            max-width: 600px;
+            padding: 30px;
+            border-radius: 10px;
+            background-color: #ffffff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            color: #000000;
+        }
+
+  
+
+        .btn-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+  
+        }
+
+        .btn {
+            font-size: 18px;
+            margin: 10px;
+            padding: 15px 25px;
+            width: 250px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="welcome-message" style="padding-left:75px;">
+            <h3>Welcome to the Admin Dashboard!</h3>
+        </div>
+
+        <div class="btn-container">
+           @if(User.IsInRole("SuperAdmin")){
+            <a asp-controller="Admin" asp-action="ListOfAdmins" class="btn btn-primary">Admins</a>
+           }
+            <a asp-controller="ManageVehicle" asp-action="ListOfVehiclesForRent" class="btn btn-primary">Manage Rent Vehicles</a>
+            <a asp-controller="ManageVehicle" asp-action="ListOfVehiclesForSale" class="btn btn-primary">Manage Sale Vehicles</a>
+            <a asp-controller="ManageVehicle" asp-action="Sold" class="btn btn-primary">Sold Vehicles</a>
+            <a asp-controller="ManageVehicle" asp-action="Rented" class="btn btn-primary">Rented Vehicles</a>
+            
+        </div>
+    </div>
+</body>
+</html>

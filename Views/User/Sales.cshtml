@@ -1,0 +1,38 @@
+﻿@model List<Sale>
+<div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+    <h1 class="section-title text-center text-primary text-uppercase">Sales</h1>
+    <br></br>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Sale Id</th>
+            <th>Total Price</th>
+            <th>Amount left </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var sale in Model)
+        {
+            <tr>
+                <td>@sale.Id</td>
+                <td>@sale.Payment.TotalPrice</td>
+                <td>@sale.Payment.AmountLeft</td>
+                @if (sale.Delivered)
+                {
+                    <td>Delivered</td>
+                }
+                else
+                {
+                    <td>Not Delivered</td>
+                }
+                <td>
+                    <br />
+                    <a asp-controller="User" asp-action="Details" asp-route-id="@sale.Id">
+                        Details
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

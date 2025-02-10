@@ -1,0 +1,62 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+
+
+        .main-container {
+            margin: 100px auto;
+            max-width: 600px;
+            padding: 30px;
+            border-radius: 10px;
+            background-color: #ffffff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            color: #000000;
+        }
+
+
+
+        .btn-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .btn {
+            font-size: 18px;
+            margin: 10px;
+            padding: 15px 25px;
+            width: 250px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="welcome-message" style="padding-left:75px;">
+            <h3>Dashboard!</h3>
+        </div>
+
+        <div class="btn-container">
+            <a asp-controller="User" asp-action="Sales" class="btn btn-primary">Sales</a>
+            <a asp-controller="Cart" asp-action="ShowCart" class="btn btn-primary">Show Sale Cart</a>
+            <a asp-controller="User" asp-action="Rentals" class="btn btn-primary">Rentals</a>
+            <a asp-controller="RentCart" asp-action="ShowCart" class="btn btn-primary">Show Rent Cart</a>
+            <a asp-controller="Search" asp-action="search" class="btn btn-primary">Buy a Car</a>
+            <a asp-controller="Rental" asp-action="Period" class="btn btn-primary">Rent a Car </a>
+            <a asp-controller="Rental" asp-action="ChangePeriod" class="btn btn-primary">Change Time Period </a>
+           @*  <a asp-controller="ManageVehicle" asp-action="ListOfVehicles" class="btn btn-primary">Manage Vehicles</a>
+ *@
+        </div>
+    </div>
+</body>
+</html>

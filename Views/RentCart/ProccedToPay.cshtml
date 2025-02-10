@@ -1,0 +1,52 @@
+﻿
+
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-5 mt-5">
+            <div class="m-auto col-lg-6">
+                <div class="wow fadeInUp" data-wow-delay="0.2s">
+                    <h1 class="mb-5">Price <span class="text-primary text-uppercase" readonly>@ViewBag.TotalPrice</span></h1>
+                    <form asp-action="CheckOut" method="post">
+                        <div asp-validation-summary="All" class="text-danger"></div>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <select id="PaymentMethod" name="PaymentMethod" onchange="toggleInput()" value="@ViewBag.Method" required min="1">
+                                        <option value="Cash">Cash</option>
+                                        <option value="Card">Card</option>
+                                      
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="number" class="form-control" name="Amount" value="@ViewBag.Amount">
+                                    <label for="Amount">Amount</label>
+                                </div>
+                            </div>
+                            <div id="inputField" style="display:none;">
+                                <label for="CardNumber">Card Number:</label>
+                                <input type="text" id="CardNumber" name="CardNumber">
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary w-100 py-3" type="submit">
+                                    Check Out
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <script>
+                        function toggleInput() {
+                            var selectedOption = document.getElementById("PaymentMethod").value;
+                            var inputField = document.getElementById("inputField");
+
+                            // Show/hide input field based on the selected option
+                            inputField.style.display = (selectedOption === "Card") ? "block" : "none";
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

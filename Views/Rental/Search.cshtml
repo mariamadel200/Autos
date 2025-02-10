@@ -1,0 +1,46 @@
+﻿@model Autos.Models.VehicleForRent
+
+<div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+    <h1 class="section-title text-center text-primary text-uppercase">Search for Vehicle</h1>
+
+</div>
+<form asp-controller="Rental" asp-action="Search" method="post">
+
+    <div class="form-group">
+        <label asp-for="Type">Type:</label>
+        <select name="Type" class="form-control" asp-for="@Model.Type">
+            <option value="Car">Car</option>
+            <option value="Motor">Motor</option>
+        </select>
+        <span asp-validation-for="Type" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Brand">Brand:</label>
+        <select name="Brand" class="form-control" asp-for="Brand" asp-items="ViewBag.Brands">
+        </select>
+        <span asp-validation-for="Brand" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Model">Model:</label>
+        <input asp-for="Model" class="form-control" />
+        <span asp-validation-for="Model" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Year">Year:</label>
+        <input asp-for="Year" class="form-control" />
+        <span asp-validation-for="Year" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Color">Color:</label>
+        <select name="Color" class="form-control" asp-for="Color" asp-items="ViewBag.Colors">
+        </select>
+        <span asp-validation-for="Color" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="PricePerDay">Price:</label>
+        <input asp-for="PricePerDay" class="form-control" />
+        <span asp-validation-for="PricePerDay" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Search</button>
+</form>

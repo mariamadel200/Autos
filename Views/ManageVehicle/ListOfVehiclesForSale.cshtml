@@ -1,0 +1,44 @@
+﻿@model List<VehicleForSale>
+<div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+    <h1 class="section-title text-center text-primary text-uppercase">Manage Vehicles</h1>
+    <br></br>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Vehicle ID</th>
+            <th>Brand</th>
+            <th>Model</th>
+            <th>Year</th>
+            <th>Color</th>
+            <th>Price</th>
+          
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var vehicle in Model)
+        {
+            <tr>
+                <td>@vehicle.Id</td>
+                <td>@vehicle.Brand</td>
+                <td>@vehicle.Model</td>
+                <td>@vehicle.Year</td>
+                <td>@vehicle.Color</td>
+                <td>@vehicle.Price</td>
+                <td>
+                    <form asp-controller="ManageVehicle" asp-action="EditVehicleForSale" asp-route-id="@vehicle.Id">
+                        <button type="submit" class="btn btn-primary">Update</button>
+                    </form>
+                    <br />
+                    <form asp-controller="ManageVehicle" asp-action="RemoveForSale" asp-route-id="@vehicle.Id">
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div>
+    <a asp-controller="ManageVehicle" asp-action="AddForSale" class="btn btn-success">Add Vehicle</a>
+</div>

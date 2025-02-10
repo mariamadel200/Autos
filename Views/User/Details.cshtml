@@ -1,0 +1,27 @@
+﻿@model List<VehicleForSale>
+<div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+    <h1 class="section-title text-center text-primary text-uppercase">Sale Vehicles</h1>
+    <br></br>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Brand</th>
+            <th>Price</th>
+            <th>Color</th>
+            <th>Year</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var Veh in Model)
+        {
+            <tr>
+                <td>@Veh.Brand</td>
+                <td>@Veh.Price</td>
+                <td>@Veh.Color</td>
+                <td>@Veh.Year</td>
+
+            </tr>
+        }
+    </tbody>
+</table>

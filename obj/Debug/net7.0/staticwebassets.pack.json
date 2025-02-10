@@ -1,0 +1,285 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Autos.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Autos.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\css\\animate.css",
+      "PackagePath": "staticwebassets\\assets\\css\\animate.css"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\css\\bootsnav.css",
+      "PackagePath": "staticwebassets\\assets\\css\\bootsnav.css"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\css\\flaticon.css",
+      "PackagePath": "staticwebassets\\assets\\css\\flaticon.css"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\css\\linearicons.css",
+      "PackagePath": "staticwebassets\\assets\\css\\linearicons.css"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\css\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\owl.carousel.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\css\\owl.theme.default.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\owl.theme.default.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\css\\responsive.css",
+      "PackagePath": "staticwebassets\\assets\\css\\responsive.css"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\css\\style.css",
+      "PackagePath": "staticwebassets\\assets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\fonts\\Flaticon.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Flaticon.eot"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\fonts\\Flaticon.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Flaticon.svg"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\fonts\\Flaticon.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Flaticon.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\fonts\\Flaticon.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Flaticon.woff"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\fonts\\Linearicons-Free.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Linearicons-Free.eot"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\fonts\\Linearicons-Free.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Linearicons-Free.svg"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\fonts\\Linearicons-Free.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Linearicons-Free.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\fonts\\Linearicons-Free.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Linearicons-Free.woff"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\fonts\\Linearicons-Free.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Linearicons-Free.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\fonts\\glyphicons-halflings-regular.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\glyphicons-halflings-regular.eot"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\fonts\\glyphicons-halflings-regular.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\glyphicons-halflings-regular.svg"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\fonts\\glyphicons-halflings-regular.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\glyphicons-halflings-regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\fonts\\glyphicons-halflings-regular.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\glyphicons-halflings-regular.woff"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\fonts\\glyphicons-halflings-regular.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\glyphicons-halflings-regular.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\images\\13.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\13.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\images\\7.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\7.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\images\\Cat.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Cat.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\images\\Done.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Done.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\images\\Magdy.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Magdy.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\images\\brand\\br1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\brand\\br1.png"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\images\\brand\\br2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\brand\\br2.png"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\images\\brand\\br3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\brand\\br3.png"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\images\\brand\\br4.png",
+      "PackagePath": "staticwebassets\\assets\\images\\brand\\br4.png"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\images\\brand\\br5.png",
+      "PackagePath": "staticwebassets\\assets\\images\\brand\\br5.png"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\images\\brand\\br6.png",
+      "PackagePath": "staticwebassets\\assets\\images\\brand\\br6.png"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\images\\clients\\c1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\clients\\c1.png"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\images\\clients\\c2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\clients\\c2.png"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\images\\clients\\c3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\clients\\c3.png"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\images\\default.png",
+      "PackagePath": "staticwebassets\\assets\\images\\default.png"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\images\\f7740248e7aa48ff8ee68794e4fe3380.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\f7740248e7aa48ff8ee68794e4fe3380.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\images\\featured-cars\\fc1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\featured-cars\\fc1.png"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\images\\featured-cars\\fc2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\featured-cars\\fc2.png"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\images\\featured-cars\\fc3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\featured-cars\\fc3.png"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\images\\featured-cars\\fc4.png",
+      "PackagePath": "staticwebassets\\assets\\images\\featured-cars\\fc4.png"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\images\\featured-cars\\fc5.png",
+      "PackagePath": "staticwebassets\\assets\\images\\featured-cars\\fc5.png"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\images\\featured-cars\\fc6.png",
+      "PackagePath": "staticwebassets\\assets\\images\\featured-cars\\fc6.png"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\images\\featured-cars\\fc7.png",
+      "PackagePath": "staticwebassets\\assets\\images\\featured-cars\\fc7.png"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\images\\featured-cars\\fc8.png",
+      "PackagePath": "staticwebassets\\assets\\images\\featured-cars\\fc8.png"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\images\\new-cars-model\\ncm1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\new-cars-model\\ncm1.png"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\images\\new-cars-model\\ncm2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\new-cars-model\\ncm2.png"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\images\\new-cars-model\\ncm3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\new-cars-model\\ncm3.png"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\images\\welcome-hero\\welcome-banner.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\welcome-hero\\welcome-banner.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\js\\bootsnav.js",
+      "PackagePath": "staticwebassets\\assets\\js\\bootsnav.js"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\js\\custom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\custom.js"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\js\\feather.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\feather.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\js\\jquery.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\js\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\owl.carousel.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Mariam Adel\\Desktop\\Auto_Management_System\\wwwroot\\assets\\logo\\favicon.png",
+      "PackagePath": "staticwebassets\\assets\\logo\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Autos.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.Autos.props",
+      "PackagePath": "build\\Autos.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.Autos.props",
+      "PackagePath": "buildMultiTargeting\\Autos.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.Autos.props",
+      "PackagePath": "buildTransitive\\Autos.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

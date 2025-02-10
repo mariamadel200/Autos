@@ -1,0 +1,95 @@
+﻿@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+
+
+<div class="container">       
+    <div class="row">
+    <div class="col-md-4">
+            <h2>@ViewData["Title"]</h2>
+            <form asp-route-returnUrl="@Model.ReturnUrl" method="post" enctype="multipart/form-data" onsubmit="return validateForm()">
+            <h4>Create a new account.</h4>
+            <hr />
+            <div asp-validation-summary="All" class="text-danger"></div>
+
+                <div class="form-group">
+                    <label asp-for="Input.Username"></label>
+                    <input asp-for="Input.Username" class="form-control" />
+                    <span asp-validation-for="Input.Username" class="text-danger"></span>
+                </div>
+
+
+               <div class="form-group">
+                    <label asp-for="Input.Firstname"></label>
+                    <input asp-for="Input.Firstname" class="form-control" />
+                    <span asp-validation-for="Input.Firstname" class="text-danger"></span>
+                </div>
+
+
+                <div class="form-group">
+                    <label asp-for="Input.Lastname"></label>
+                    <input asp-for="Input.Lastname" class="form-control" />
+                    <span asp-validation-for="Input.Lastname" class="text-danger"></span>
+                </div>
+
+            <div class="form-group">
+                <label asp-for="Input.Email"></label>
+                <input asp-for="Input.Email" class="form-control" />
+                <span asp-validation-for="Input.Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Input.Password"></label>
+                <input asp-for="Input.Password" class="form-control" />
+                <span asp-validation-for="Input.Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Input.ConfirmPassword"></label>
+                <input asp-for="Input.ConfirmPassword" class="form-control" />
+                <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+            </div>
+
+                <div class="form-group">
+                    <label asp-for="Input.PhoneNumber"></label>
+                    <input asp-for="Input.PhoneNumber" class="form-control" />
+                    <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Input.Image"></label>
+                    <input  class="form-control" type="file" name="img_file" accept="image/*" />
+                    <span asp-validation-for="Input.Image" class="text-danger"></span>
+
+                </div>
+                <script>
+                    function validateForm() {
+                        var fileInput = document.getElementById("uploadImage");
+
+                        // Check if any files are selected
+                        if (fileInput.files.length > 0) {
+                            var filePath = fileInput.value;
+                            var allowedExtensions = /(\.jpg|\.jpeg|\.png)$/i;
+
+                            // Check the file extension
+                            var fileName = fileInput.files[0].name;
+                            if (!allowedExtensions.exec(fileName)) {
+                                alert('Please upload only images with the following extensions: .jpg, .jpeg, .png');
+                                fileInput.value = '';
+                                return false;
+                            }
+                        }
+
+                        // Continue with other form validation logic
+                        return true;
+                    }
+                </script>
+            <button type="submit" class="btn btn-default">Register</button>
+        </form>
+        </div>
+    </div>
+    </div>
+  
+    
+
+

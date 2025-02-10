@@ -1,0 +1,44 @@
+﻿@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<User> SignInManager
+@inject UserManager<User> UserManager
+<style>
+    #logoutForm {
+        position: relative;
+        padding: 48px 21px;
+        display: block;
+        float: left;
+        color: white;
+        text-transform: uppercase;
+    }
+</style>
+@if (SignInManager.IsSignedIn(User))
+{
+  
+    <li>
+        <a asp-area="" asp-controller="Home" asp-action="Profile" title="Manage">@UserManager.GetUserName(User)</a>
+    </li>
+    <li>
+        @if (User.IsInRole("SuperAdmin") || User.IsInRole("Admin"))
+        {
+            <a asp-area="" asp-action="Dashboard" asp-controller="Admin">Dashboard</a>
+        }
+        @if (User.IsInRole("User"))
+        {
+            <a asp-area=""  asp-action="Dashboard" asp-controller="User">Dashboard</a>
+        }
+    </li>
+    
+    <li>
+        <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/Index", new { area = "" })" method="post" id="logoutForm">
+            <button type="submit">LOGOUT</button>
+        </form>
+    </li>
+}
+else
+{
+   
+        <li><a asp-area="Identity" asp-page="/Account/Register">Register</a></li>
+        <li><a asp-area="Identity" asp-page="/Account/Login">Login</a></li>
+  
+}

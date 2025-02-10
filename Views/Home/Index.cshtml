@@ -1,0 +1,257 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<style>
+    .container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .hero {
+        background: #f8f9fa;
+        padding: 60px 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .hero-content {
+        display: flex;
+        align-items: center;
+    }
+
+    .hero-text h1 {
+        font-size: 48px;
+        font-weight: 700;
+        color: #333;
+    }
+
+    .hero-text p {
+        font-size: 18px;
+        color: #666;
+        margin-bottom: 20px;
+    }
+
+    .hero-btn {
+        background: #007bff;
+        color: #fff;
+        border: none;
+        padding: 12px 30px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+
+        .hero-btn:hover {
+            background: #0056b3;
+        }
+
+    .hero-image img {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+</style>
+
+<!-- Hero Section -->
+<section id="hero" class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="hero-text">
+                        <h1>Find Your Perfect Car</h1>
+                        <p>Discover the best deals on the latest models. Quality vehicles, unmatched service.</p>
+                        <button class="hero-btn" onclick="window.location.href='#new-cars'">Explore Now</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="hero-image">
+                        <img src="~/assets/images/welcome-hero/welcome-banner.jpg" alt="Hero Car">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Hero Section End -->
+<!-- Service Section -->
+<section id="service" class="service">
+    <div class="container">
+        <div class="service-content">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-service-item">
+                        <div class="single-service-icon">
+                            <i class="flaticon-car"></i>
+                        </div>
+                        <h2><a href="#">Largest Dealership <span>of</span> Cars</a></h2>
+                        <p>
+                            We offer an extensive selection of vehicles from various manufacturers, ensuring you find the perfect car to suit your needs and budget.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-service-item">
+                        <div class="single-service-icon">
+                            <i class="flaticon-car-repair"></i>
+                        </div>
+                        <h2><a href="#">Unlimited Repair Warranty</a></h2>
+                        <p>
+                            Enjoy peace of mind with our unlimited repair warranty, covering all aspects of vehicle maintenance and ensuring your car stays in top condition.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-service-item">
+                        <div class="single-service-icon">
+                            <i class="flaticon-car-1"></i>
+                        </div>
+                        <h2><a href="#">Insurance Support</a></h2>
+                        <p>
+                            Our team provides comprehensive insurance support, helping you navigate through various options and find the best coverage for your vehicle.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Service Section End -->
+<!-- New Cars Section -->
+<section id="new-cars" class="new-cars">
+    <div class="container">
+        <div class="section-header">
+            <p>Checkout <span>the</span> Latest Cars</p>
+            <h2>Newest Cars</h2>
+        </div>
+        <div class="new-cars-content">
+            <div class="owl-carousel owl-theme" id="new-cars-carousel">
+                <div class="new-cars-item">
+                    <div class="single-new-cars-item">
+                        <div class="row">
+                            <div class="col-md-7 col-sm-12">
+                                <div class="new-cars-img">
+                                    <img src="~/assets/images/new-cars-model/ncm1.png" alt="img" />
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-sm-12">
+                                <div class="new-cars-txt">
+                                    <h2><a href="#">Chevrolet Camaro <span> ZA100</span></a></h2>
+                                    <p>
+                                        Experience the thrill of the new Chevrolet Camaro ZA100, designed for performance and style. Perfect for both city driving and weekend getaways.
+                                    </p>
+                                    <p class="new-cars-para2">
+                                        This model comes with advanced features and a sleek design, making it a top choice for car enthusiasts.
+                                    </p>
+                                    <button class="welcome-btn new-cars-btn" onclick="window.location.href='#'">
+                                        View Details
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more new-cars-item divs as needed -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- New Cars Section End -->
+<!-- Featured Cars Section -->
+<section id="featured-cars" class="featured-cars">
+    <div class="container">
+        <div class="section-header">
+            <p>Checkout <span>the</span> Featured Cars</p>
+            <h2>Featured Cars</h2>
+        </div>
+        <div class="featured-cars-content">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="single-featured-cars">
+                        <div class="featured-img-box">
+                            <div class="featured-cars-img">
+                                <img src="~/assets/images/featured-cars/fc1.png" alt="cars">
+                            </div>
+                            <div class="featured-model-info">
+                                <p>
+                                    Model: 2017
+                                    <span class="featured-mi-span"> 3100 mi</span>
+                                    <span class="featured-hp-span"> 240HP</span>
+                                    Automatic
+                                </p>
+                            </div>
+                        </div>
+                        <div class="featured-cars-txt">
+                            <h2><a href="#">BMW 6-series Gran Coupe</a></h2>
+                            <h3>$89,395</h3>
+                            <p>
+                                This luxurious BMW 6-series Gran Coupe combines elegance and performance, offering a premium driving experience with top-of-the-line features.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more single-featured-cars divs as needed -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Featured Cars Section End -->
+<!-- Clients Say Section -->
+<section id="clients-say" class="clients-say">
+    <div class="container">
+        <div class="section-header">
+            <h2>What Our Clients Say</h2>
+        </div>
+        <div class="row">
+            <div class="owl-carousel testimonial-carousel">
+                <div class="col-sm-3 col-xs-12">
+                    <div class="single-testimonial-box">
+                        <div class="testimonial-description">
+                            <div class="testimonial-info">
+                                <div class="testimonial-img">
+                                    <img src="~/assets/images/clients/c1.png" alt="image of clients person" />
+                                </div>
+                            </div>
+                            <div class="testimonial-comment">
+                                <p>
+                                    "The service at this dealership is outstanding! They helped me find the perfect car and provided excellent customer service throughout the process."
+                                </p>
+                            </div>
+                            <div class="testimonial-person">
+                                <h2><a href="#">Tomas Lili</a></h2>
+                                <h4>New York</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more single-testimonial-box divs as needed -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Clients Say Section End -->
+<!-- Brand Section -->
+<section id="brand" class="brand">
+    <div class="container">
+        <div class="brand-area">
+            <div class="owl-carousel owl-theme brand-item">
+                <div class="item">
+                    <a href="#">
+                        <img src="~/assets/images/brand/br1.png" alt="brand-image" />
+                    </a>
+                </div>
+                <!-- Add more item divs as needed -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Brand Section End -->
+<!-- Blog Section -->
+<section id="blog" class="blog">
+    <!-- Blog content here -->
+</section>
+<!-- Blog Section End -->

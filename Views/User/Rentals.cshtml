@@ -1,0 +1,42 @@
+﻿@model List<Rental>
+<div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+    <h1 class="section-title text-center text-primary text-uppercase">rentals</h1>
+    <br></br>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Rental Id</th>
+            <th>Total Price</th>
+            <th>Amount left </th>
+            <th>Start Date </th>
+            <th>End Date </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var rental in Model)
+        {
+            <tr>
+                <td>@rental.Id</td>
+                <td>@rental.Payment.TotalPrice</td>
+                <td>@rental.Payment.AmountLeft</td>
+                <td>@rental.StartDate</td>
+                <td>@rental.EndDate</td>
+                @if (rental.Delivered)
+                {
+                    <td>Delivered</td>
+                }
+                else
+                {
+                    <td>Not Delivered</td>
+                }
+                <td>
+                    <br />
+                    <a asp-controller="User" asp-action="RentDetails" asp-route-id="@rental.Id">
+                        Details
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

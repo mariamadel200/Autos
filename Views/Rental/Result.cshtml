@@ -1,0 +1,35 @@
+﻿@model List<Autos.Models.VehicleForRent>
+<div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+    <h1 class="section-title text-center text-primary text-uppercase">Search for Vehicles</h1>
+    <br></br>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Brand</th>
+            <th>Model</th>
+            <th>Year</th>
+            <th>Color</th>
+            <th>PricePerDay</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var vehicle in Model)
+        {
+            <tr>
+                <td>@vehicle.Brand</td>
+                <td>@vehicle.Model</td>
+                <td>@vehicle.Year</td>
+                <td>@vehicle.Color</td>
+                <td>@vehicle.PricePerDay</td>
+                <td>
+                    <form asp-controller="RentCart" asp-action="AddToCart" asp-route-id="@vehicle.Id">
+                        <button type="submit" class="btn btn-primary">Add to Cart</button>
+                    </form>
+                </td>
+            </tr>
+        }
+
+    </tbody>
+</table>
+

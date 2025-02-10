@@ -1,0 +1,44 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model List<VehicleForSale>
+
+<div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+    <h1 class="section-title text-center text-primary text-uppercase">Show Cart</h1>
+    <br></br>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Brand</th>
+            <th>Model</th>
+            <th>Year</th>
+            <th>Color</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var vehicle in Model)
+        {
+            <tr>
+                <td>@vehicle.Brand</td>
+                <td>@vehicle.Model</td>
+                <td>@vehicle.Year</td>
+                <td>@vehicle.Color</td>
+                <td>@vehicle.Price</td>
+                <td>
+                    <form asp-controller="Cart" asp-action="RemoveFromCart" asp-route-id="@vehicle.Id">
+                        <button type="submit" class="btn btn-primary">Remove from Cart</button>
+                    </form>
+                </td>
+            </tr>
+        }
+        <form asp-controller="Cart" asp-action="ProccedToPay">
+            <button type="submit" class="btn btn-primary">Proceed to Pay</button>
+        </form>
+
+    </tbody>
+</table>

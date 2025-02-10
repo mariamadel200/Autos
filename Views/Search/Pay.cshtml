@@ -1,0 +1,29 @@
+﻿@* @model Vehicle
+<table class="table">
+    <thead>
+        <tr>
+            <th>Brand</th>
+            <th>Model</th>
+            <th>Year</th>
+            <th>Color</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+
+            <tr>
+                <td>@Model.Brand</td>
+                <td>@Model.Model</td>
+                <td>@Model.Year</td>
+                <td>@Model.Color</td>
+                <td>@Model.Price</td>
+                <td>
+                <form asp-controller="Search" asp-action="Done" asp-route-id="@Model.Id">
+                        <button type="submit" class="btn btn-primary">Done</button>
+                    </form>
+                </td>
+            </tr>
+        
+    </tbody>
+</table>
+ *@

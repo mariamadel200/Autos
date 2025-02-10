@@ -1,0 +1,47 @@
+﻿@model User
+
+<style>
+
+    .round {
+       
+        border-radius: 50%; 
+        width: 100px; 
+        height: 100px; 
+    }
+</style>
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="wow fadeInUp" data-wow-delay="0.1s">
+           <h1 class="mb-5">
+                @Model.UserName <span class="text-primary text-uppercase">
+                </span>
+            </h1>
+        </div>
+    </div>
+</div>
+<!-- title End -->
+<!-- Main -->
+<img class="round" src="/assets/images/@Model.Image">
+<div class="row">
+        <div class="col-md-6">
+            <form id="profile-form">
+           
+                <div class="form-group">
+                <label>Name</label>
+                  <p>@Model.Firstname @Model.Lastname</p>
+                </div>
+                <div class="form-group">
+                <label asp-for="@Model.Email"></label>
+                <p>@Model.Email</p>
+                   
+                </div>
+                <div class="form-group">
+                <label asp-for="@Model.PhoneNumber"></label>
+                <p>@Model.PhoneNumber</p>
+                </div>
+            <a class="btn btn-primary py-3 px-5 mt-2" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Edit Profile</a>
+
+            </form>
+        </div>
+
+    </div>

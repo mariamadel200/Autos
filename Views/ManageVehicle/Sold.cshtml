@@ -1,0 +1,53 @@
+﻿@model List<Sale>
+
+<div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+    <h1 class="section-title text-center text-primary text-uppercase">Sold Vehicles</h1>
+    <br></br>
+</div>
+
+<form method="get" asp-action="Sold">
+    <div class="form-group">
+        <label for="filter">Filter By:</label>
+        <select id="filter" name="filter" class="form-control">
+            <option value="filter">filter</option>
+            <option value="day">Day</option>
+            <option value="week">Week</option>
+            <option value="month">Month</option>
+            <option value="year">Year</option>
+        </select>
+        <button type="submit" class="btn btn-primary">Apply Filter</button>
+    </div>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Sale ID</th>
+            <th>Username</th>
+            <th>Sale Date</th>
+            <th>Total Price</th>
+            <th>Payment Method</th>
+            <th>Amount Left</th>
+            <th>Delivered</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var vehicle in Model)
+        {
+            <tr>
+                <td>@vehicle.Id</td>
+                <td>@vehicle.User.UserName</td>
+                <td>@vehicle.SaleDate</td>
+                <td>@vehicle.Payment.TotalPrice</td>
+                <td>@vehicle.Payment.Method</td>
+                <td>@vehicle.Payment.AmountLeft</td>
+                <td>@vehicle.Delivered</td>
+                <td>
+                    <form asp-controller="ManageVehicle" asp-action="DeliveredforSale" asp-route-id="@vehicle.Id">
+                        <button type="submit" class="btn btn-danger">Delivered</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
